@@ -1,0 +1,22 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  role_name: bash_aliases
+  author: raf-net
+  description: Configuration of Bash aliases for multiple users on Debian/Ubuntu.
+  company: ""
+  license: "license MIT"
+  min_ansible_version: 2.8
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - bash
+    - aliases
+    - ansible

@@ -1,0 +1,15 @@
+---
+
+#  Whether or not to set up bash aliases
+bash_aliases_setup: false
+
+# The path to the .bash_aliases file in the system.
+bash_aliases_path: "~/.bash_aliases"
+
+# List of users for alias configuration.
+bash_aliases_users:
+  - root
+
+# Dictionary structure holding a list of aliases.
+bash_aliases_list:
+  - {alias: 'h', command: 'history'}  # Quick history list overview.
