@@ -11,7 +11,7 @@ None.
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
 
-    bash_aliases_setup: false
+    bash_aliases_setup: true
 
 Whether or not to set up bash aliases
 
