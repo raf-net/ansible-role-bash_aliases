@@ -15,7 +15,7 @@
   ansible.builtin.lineinfile:
     dest: "{{ bash_aliases_path }}"
     create: true
-    mode: 0640
+    mode: "0640"
     line: 'alias {{ item[1].alias }}="{{ item[1].command }}"'
     regexp: "^alias {{ item[1].alias }}="
   with_nested:
