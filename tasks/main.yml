@@ -21,4 +21,4 @@
   with_nested:
     - "{{ bash_aliases_users }}"
     - "{{ bash_aliases_list }}"
-  when: not bash_aliases_setup
+  when: bash_aliases_setup

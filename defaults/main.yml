@@ -1,7 +1,7 @@
 ---
 
 #  Whether or not to set up bash aliases
-bash_aliases_setup: false
+bash_aliases_setup: true
 
 # The path to the .bash_aliases file in the system.
 bash_aliases_path: "~/.bash_aliases"
