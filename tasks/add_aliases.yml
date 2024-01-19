@@ -1,0 +1,16 @@
+---
+
+- name: Add aliases.
+  become: true
+  become_user: "{{ item[0] }}"
+  become_method: sudo
+  become_flags: '--login'
+  ansible.builtin.lineinfile:
+    dest: "{{ bash_aliases_path }}"
+    create: true
+    mode: "0640"
+    line: 'alias {{ item[1].alias }}="{{ item[1].command }}"'
+    regexp: "^alias {{ item[1].alias }}="
+  with_nested:
+    - "{{ bash_aliases_users }}"
+    - "{{ bash_aliases_list }}"
