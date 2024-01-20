@@ -70,11 +70,12 @@ None.
 
     - hosts: server
       vars:
-        - bash_aliases_setup: true
-        - bash_aliases_per_user: true
-        - bash_aliases_per_user_list:
+        bash_aliases_setup: true
+        bash_aliases_per_user: true
+        bash_aliases_per_user_list:
           - {user: 'root', alias: 'h', command: 'history'}
           - {user: 'vagrant', alias: 'c', command: 'clear'}
+          - {user: 'vagrant', alias: 'cdlog', command: 'cd /var/log'}
       roles:
         - { role: raf-net.bash_aliases }
 
