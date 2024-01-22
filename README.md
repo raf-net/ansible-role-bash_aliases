@@ -55,12 +55,12 @@ None.
 
     - hosts: server
       vars:
-        - bash_aliases_setup: true
-        - bash_aliases_per_user: false
-        - bash_aliases_users:
+        bash_aliases_setup: true
+        bash_aliases_per_user: false
+        bash_aliases_users:
           - vagrant
           - root
-        - bash_aliases_list:
+        bash_aliases_list:
           - {alias: 'h', command: 'history'}
           - {alias: 'cdlog', command: 'cd /var/log'}
       roles:
