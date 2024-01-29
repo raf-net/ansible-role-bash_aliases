@@ -3,7 +3,7 @@
 - name: Add aliases.
   become: true
   become_user: "{{ item[0] }}"
-  become_method: sudo
+  become_method: ansible.builtin.sudo
   become_flags: '--login'
   ansible.builtin.lineinfile:
     dest: "{{ bash_aliases_path }}"
